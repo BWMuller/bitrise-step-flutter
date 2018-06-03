@@ -12,8 +12,8 @@ title: |-
 summary: |
   Executes one or more Flutter commands. E.g. build, test or install.
 website: https://github.com/DroidsOnRoids/bitrise-step-flutter
-source_code_url: https://github.com/BWMuller/bitrise-step-flutter
-support_url: https://github.com/BWMuller/bitrise-step-flutter/issues
+source_code_url: https://github.com/bwmuller/bitrise-step-flutter
+support_url: https://github.com/bwmuller/bitrise-step-flutter/issues
 host_os_tags:
   - osx-10.10
   - ubuntu-16.04
@@ -35,18 +35,15 @@ deps:
   - name: git
   - name: curl
   - name: unzip
-  - name: go
   apt_get:
   - name: git
   - name: curl
   - name: unzip
   - name: libglu1-mesa
-  - name: golang
-    bin_name: go
 
 toolkit:
   go:
-    package_name: github.com/BWMuller/bitrise-step-flutter
+    package_name: github.com/bwmuller/bitrise-step-flutter
 
 
 inputs:

@@ -1,0 +1,139 @@
+{
+	"ImportPath": "github.com/bwmuller/bitrise-step-flutter",
+	"GoVersion": "go1.9",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/colorstring",
+			"Rev": "d1de0dbcb811588e61362aff67bb700b93c13c17"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/command",
+			"Rev": "d1de0dbcb811588e61362aff67bb700b93c13c17"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/errorutil",
+			"Rev": "d1de0dbcb811588e61362aff67bb700b93c13c17"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/log",
+			"Rev": "d1de0dbcb811588e61362aff67bb700b93c13c17"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/parseutil",
+			"Rev": "d1de0dbcb811588e61362aff67bb700b93c13c17"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/pathutil",
+			"Rev": "d1de0dbcb811588e61362aff67bb700b93c13c17"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/pointers",
+			"Rev": "d1de0dbcb811588e61362aff67bb700b93c13c17"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/retry",
+			"Rev": "d1de0dbcb811588e61362aff67bb700b93c13c17"
+		},
+		{
+			"ImportPath": "github.com/bitrise-io/go-utils/versions",
+			"Rev": "d1de0dbcb811588e61362aff67bb700b93c13c17"
+		},
+		{
+			"ImportPath": "github.com/bitrise-tools/go-steputils/stepconf",
+			"Rev": "d4d9e08cc4347e8784bb18419fcdceb932e17019"
+		},
+		{
+			"ImportPath": "github.com/davecgh/go-spew/spew",
+			"Comment": "v1.1.0-12-g8991bc2",
+			"Rev": "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
+		},
+		{
+			"ImportPath": "github.com/dsnet/compress",
+			"Rev": "cc9eb1d7ad760af14e8f918698f745e80377af4f"
+		},
+		{
+			"ImportPath": "github.com/dsnet/compress/bzip2",
+			"Rev": "cc9eb1d7ad760af14e8f918698f745e80377af4f"
+		},
+		{
+			"ImportPath": "github.com/dsnet/compress/bzip2/internal/sais",
+			"Rev": "cc9eb1d7ad760af14e8f918698f745e80377af4f"
+		},
+		{
+			"ImportPath": "github.com/dsnet/compress/internal",
+			"Rev": "cc9eb1d7ad760af14e8f918698f745e80377af4f"
+		},
+		{
+			"ImportPath": "github.com/dsnet/compress/internal/errors",
+			"Rev": "cc9eb1d7ad760af14e8f918698f745e80377af4f"
+		},
+		{
+			"ImportPath": "github.com/dsnet/compress/internal/prefix",
+			"Rev": "cc9eb1d7ad760af14e8f918698f745e80377af4f"
+		},
+		{
+			"ImportPath": "github.com/golang/snappy",
+			"Rev": "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
+		},
+		{
+			"ImportPath": "github.com/magiconair/properties",
+			"Comment": "v1.8.0",
+			"Rev": "c2353362d570a7bfa228149c62842019201cfb71"
+		},
+		{
+			"ImportPath": "github.com/mholt/archiver",
+			"Comment": "v2.0-27-ge4ef56d",
+			"Rev": "e4ef56d48eb029648b0e895bb0b6a393ef0829c3"
+		},
+		{
+			"ImportPath": "github.com/nwaples/rardecode",
+			"Rev": "e06696f847aeda6f39a8f0b7cdff193b7690aef6"
+		},
+		{
+			"ImportPath": "github.com/pierrec/lz4",
+			"Comment": "v1.1-2-ged8d4cc",
+			"Rev": "ed8d4cc3b461464e69798080a0092bd028910298"
+		},
+		{
+			"ImportPath": "github.com/pierrec/xxHash/xxHash32",
+			"Comment": "v0.1-11-ga0006b1",
+			"Rev": "a0006b13c722f7f12368c00a3d3c2ae8a999a0c6"
+		},
+		{
+			"ImportPath": "github.com/pmezard/go-difflib/difflib",
+			"Comment": "v1.0.0",
+			"Rev": "792786c7400a136282c1664665ae0a8db921c6c2"
+		},
+		{
+			"ImportPath": "github.com/stretchr/testify/assert",
+			"Comment": "v1.2.1-14-gc679ae2",
+			"Rev": "c679ae2cc0cb27ec3293fea7e254e47386f05d69"
+		},
+		{
+			"ImportPath": "github.com/stretchr/testify/require",
+			"Comment": "v1.2.1-14-gc679ae2",
+			"Rev": "c679ae2cc0cb27ec3293fea7e254e47386f05d69"
+		},
+		{
+			"ImportPath": "github.com/ulikunitz/xz",
+			"Comment": "v0.5.4",
+			"Rev": "0c6b41e72360850ca4f98dc341fd999726ea007f"
+		},
+		{
+			"ImportPath": "github.com/ulikunitz/xz/internal/hash",
+			"Comment": "v0.5.4",
+			"Rev": "0c6b41e72360850ca4f98dc341fd999726ea007f"
+		},
+		{
+			"ImportPath": "github.com/ulikunitz/xz/internal/xlog",
+			"Comment": "v0.5.4",
+			"Rev": "0c6b41e72360850ca4f98dc341fd999726ea007f"
+		},
+		{
+			"ImportPath": "github.com/ulikunitz/xz/lzma",
+			"Comment": "v0.5.4",
+			"Rev": "0c6b41e72360850ca4f98dc341fd999726ea007f"
+		}
+	]
+}
