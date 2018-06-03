@@ -68,3 +68,132 @@ inputs:
         `|` separated Flutter commands to be executed in order. E.g. `build`, `test` or `install`.
       is_expand: true
       is_required: true
+
+
+#ANDROID EXPORT CONFIGS
+  - apk_file_include_filter: "*.apk"
+    opts:
+      category: Android Export Config
+      title: "APK file include filter"
+      description: |
+        The step will copy the generated apk files that match this filter into the Bitrise Deploy Directory.
+
+        This filter is a standard find commands -path pattern, see: http://linux.die.net/man/1/find
+
+        If you specify an empty filter, the step will set this filter to: `*.apk`.
+
+        Example:
+
+        Copy every apk:
+
+        ```
+        "*.apk"
+        ```
+
+        Copy every apk which filename contains `release`, like (`./app/build/outputs/apk/app-release-unsigned.apk`):
+
+        ```
+        *release*.apk
+        ```
+  - apk_file_exclude_filter: |
+      *unaligned.apk
+      *Test*.apk
+    opts:
+      category: Android Export Config
+      title: "APK file exclude filter"
+      description: |
+        One filter per line. The step will **not** copy the generated apk files that match this filters into the Bitrise Deploy Directory.
+        You can use this filter to avoid moving unalinged and/or unsigned apk files.
+
+        This filter is a standard find commands negated -path flag, see: http://linux.die.net/man/1/find
+
+        If you specify an empty filter, every apk file (selected by `apk_file_include_filter`) will be copied.
+
+        Examples:
+
+        Avoid to copy apk if filename contains `unaligned`:
+        
+        ```
+        *unaligned*.apk
+        ```
+
+        Avoid to copy apk if filename contains `unaligned` and/or `Test`:
+        
+        ```
+        *unaligned*.apk
+        *Test*.apk
+        ```
+  - test_apk_file_include_filter: "*Test*.apk"
+    opts:
+      category: Android Export Config
+      title: "Test APK file include filter"
+      description: |
+        The step will copy the generated apk files that match this filter into the Bitrise Deploy Directory.
+
+        This filter is a standard find commands -path pattern, see: http://linux.die.net/man/1/find
+
+        If you specify an empty filter, the step will set this filter to: `*.apk`.
+
+        Example:
+
+        Copy every apk which filename contains `Test`, like (`./app/build/outputs/apk/app-debug-androidTest-unaligned.apk`):
+        
+        ```
+        *Test*.apk
+        ```
+  - test_apk_file_exclude_filter: ""
+    opts:
+      category: Android Export Config
+      title: "Test APK file exclude filter"
+      description: |
+        One filter per line. The step will **not** copy the generated apk files that match this filters into the Bitrise Deploy Directory.
+        You can use this filter to avoid moving unalinged and/or unsigned apk files.
+
+        This filter is a standard find commands negated -path flag, see: http://linux.die.net/man/1/find
+
+        If you specify an empty filter, every apk file (selected by `apk_file_include_filter`) will be copied.
+
+        Example:
+
+        Avoid to copy test apk if filename contains `unaligned`:
+
+        ```
+        *unaligned*.apk
+        ```
+  - mapping_file_include_filter: "*/mapping.txt"
+    opts:
+      category: Android Export Config
+      title: "Mapping file include filter"
+      description: |
+        The step will copy the generated mapping files that match this filter into the Bitrise Deploy Directory.
+
+        This filter is a standard find commands -path pattern, see: http://linux.die.net/man/1/find
+
+        If you specify an empty filter, no mapping files will be copied.
+
+        Example: 
+        
+        Copy every mapping.txt file:
+
+        ```
+        *mapping.txt
+        ```
+  - mapping_file_exclude_filter:
+    opts:
+      category: Android Export Config
+      title: "Mapping file exclude filter"
+      description: |
+        The step will **not** copy the generated mapping files that match this filter into the Bitrise Deploy Directory.
+        You can use this step to avoid moving beta mapping file.
+
+        This filter is a standard find commands negated -path flag, see: http://linux.die.net/man/1/find
+
+        If you specify an empty filter, every mapping files (selected by `mapping_file_include_filter`) will be copied.
+
+        Example: 
+        
+        Avoid to copy mapping.txt file in a `beta` directoy:
+
+        ```
+        */beta/mapping.txt
+        ``` 
